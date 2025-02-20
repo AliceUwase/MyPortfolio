@@ -54,16 +54,15 @@ section {
 }
 
 .navbar a {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     color: var(--text-color);
     margin-left: 4rem;
-    font-weight: 700;
-
+    transition: .3s;
 }
 
 .navbar a:hover,
 .navbar a.active {
-    color: var(--text-color);
+    color: var(--main-color);
 }
 
 #menu-icon {
@@ -91,6 +90,18 @@ section {
 span {
     color: var(--main-color);
      
+}
+.spherical-image {
+    width: 500px; /* For Width adjustment */
+    height: 400px; /* For height adjustment */
+    border-radius: 60%;
+    object-fit: cover; /* Ensures the image covers the entire area */
+    margin-left: 6rem; 
+}
+.intro-text {
+    font-size: 3.6rem;
+    margin: 2rem 0;
+    line-height: 1.6;
 }
 
 .home-content h1 {
@@ -157,7 +168,10 @@ span {
 
 .btn:hover {
     box-shadow: none;
-
+    transform: scale(1.05);  /* enlarges a btn a bit*/
+    background: var(--bg-color);  /* changes the background color when pressed*/
+    color: var(--main-color);  /* changes text color */
+    border: 2px solid var(--main-color);  /* adds a border to text */
 }
 
 .about {
@@ -187,42 +201,44 @@ span {
 
 }
 .about-content p {
-    font-size: 1.6rem;
+    font-size: 2rem;
     margin: 2rem 0;
 }
 .services {
     width: 100%;
-    min-height: 100vh; /* Added to ensure full height */
-    padding: 6rem 0; /* Increased padding */
+    min-height: 100vh;
+    padding: 6rem 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; /* Added to center vertically */
+    justify-content: center;
 }
 
 .services h2 {
-    margin-bottom: 4rem; /* Increased margin */
+    margin-bottom: 4rem;
     text-align: center;
-    font-size: 2.5rem; /* Added for better heading size */
+    font-size: 3rem; /* Increased font size */
 }
+
 .services-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: stretch; /* Added to ensure equal height */
-    gap: 3rem; /* Increased gap between cards */
+    align-items: stretch;
+    gap: 3rem;
     padding: 2rem;
-    max-width: 1400px; /* Increased max-width */
+    max-width: 1400px;
     margin: auto;
-    width: 90%; /* Added to ensure proper width on larger screens */
+    width: 90%;
 }
+
 .service-box {
-    flex: 1 1 350px; /* Increased base width */
-    max-width: 400px; /* Increased max-width */
-    min-height: 350px; /* Added minimum height */
+    flex: 1 1 400px; /* Increased flex basis */
+    max-width: 450px; /* Increased max width */
+    min-height: 450px; /* Increased min height */
     background: #0d1b2a;
-    padding: 3rem 2rem; /* Increased padding */
-    border-radius: 1.5rem; /* Increased border radius */
+    padding: 2rem;
+    border-radius: 1rem;
     text-align: center;
     border: 2px solid #1b263b;
     transition: 0.5s ease;
@@ -232,58 +248,45 @@ span {
     justify-content: space-between;
     align-items: center;
 }
+
 .service-box:hover {
-    border-color: var(--main-color);
-    transform: scale(1.02); /* Reduced scale for better UX */
-    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
-}
-/* .services-container .services-box {
-    flex: 1 1 30rem;
-    background: var(--snd-bg-color);
-    padding: 3rem 2rem 4rem;
-    border-radius: 1.5rem;
-    text-align: center;
-    border: 0.2rem solid var(--bg-color);
-    transition: .5s ease;
-    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
-} */
-/* .services-container .services-box:hover {
     border-color: var(--main-color);
     transform: scale(1.02);
     box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
-} */
-.services-box i {
-    font-size: 4rem; /* Increased icon size */
-    color: gold;
-    margin-bottom: 1.5rem;
 }
-    
+
+.services-box i {
+    font-size: 4rem; /* Increased font size */
+    color: gold;
+    margin-bottom: 1rem;
+}
 
 .services-box h3 {
-    font-size: 1.8rem;
-    margin-bottom: 1.5rem;
-    
-}   
-.services-box p {
-    font-size: 1.1rem;
-    margin: 2rem;
-    line-height: 1.6;
+    font-size: 2rem; /* Increased font size */
+    margin-bottom: 1rem;
 }
+
+.services-box p {
+    font-size: 1.4rem; /* Increased font size */
+    margin: 1rem 0;
+    line-height: 1.6; /* Increased line height */
+}
+
 .btn {
     display: inline-block;
-    padding: 12px 28px; /* Increased padding */
-    font-size: 1.2rem;
+    padding: 14px 32px; /* Increased padding */
+    font-size: 1.4rem; /* Increased font size */
     color: #fff;
     background: gold;
-    border-radius: 8px; /* Increased border radius */
+    border-radius: 8px;
     text-decoration: none;
     transition: 0.3s;
-    margin-top: auto; /* Pushes button to bottom */
-} 
+    margin-top: auto;
+}
 
 .btn:hover {
-    background: orange;
-    transform: translateY(-2px); /* Added hover effect */
+    background: rgba(7, 36, 123, 0.61);
+    transform: translateY(-2px);
 }
 
 @media (max-width: 1200px) {
@@ -450,7 +453,7 @@ span {
     transition: 0.3s;
 }
 .btn:hover {
-    background: orange;
+    background: rgba(7, 36, 123, 0.61);
 }
 
 /* Responsive Design */
@@ -546,7 +549,7 @@ span {
     .navbar a {
         display: block;
         font-size: 2rem;
-        margin: 3rem 0;
+        margin: 1rem 0;
     }
 
     .home {
