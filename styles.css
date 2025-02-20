@@ -217,7 +217,7 @@ span {
 .services h2 {
     margin-bottom: 4rem;
     text-align: center;
-    font-size: 3rem; /* Increased font size */
+    font-size: 3rem; /* adjusts font size */
 }
 
 .services-container {
@@ -233,9 +233,9 @@ span {
 }
 
 .service-box {
-    flex: 1 1 400px; /* Increased flex basis */
-    max-width: 450px; /* Increased max width */
-    min-height: 450px; /* Increased min height */
+    flex: 1 1 400px; /* adjusts flex basis */
+    max-width: 450px; /* adjusts max width */
+    min-height: 450px; /* adjusts min height */
     background: #0d1b2a;
     padding: 2rem;
     border-radius: 1rem;
@@ -256,25 +256,25 @@ span {
 }
 
 .services-box i {
-    font-size: 4rem; /* Increased font size */
+    font-size: 4rem; /* adjusts font size */
     color: gold;
     margin-bottom: 1rem;
 }
 
 .services-box h3 {
-    font-size: 2rem; /* Increased font size */
+    font-size: 2rem; /* adjusts font size */
     margin-bottom: 1rem;
 }
 
 .services-box p {
-    font-size: 1.4rem; /* Increased font size */
+    font-size: 1.4rem; /* adjusts font size */
     margin: 1rem 0;
-    line-height: 1.6; /* Increased line height */
+    line-height: 1.6; /* adjusts line height */
 }
 
 .btn {
     display: inline-block;
-    padding: 14px 32px; /* Increased padding */
+    padding: 14px 32px; /* adjusts padding */
     font-size: 1.4rem; /* Increased font size */
     color: #fff;
     background: gold;
@@ -291,16 +291,16 @@ span {
 
 @media (max-width: 1200px) {
     .service-box {
-        flex: 1 1 400px; /* Increased for better tablet display */
+        flex: 1 1 400px; /* adjusted for better tablet display */
         margin: 0 1rem; /* Added horizontal margin */
     }
 }
 
-/* Responsive Fix: 1 Column on Small Screens */
+/* Responsive Fix: 1 Column for Small Screens */
 @media (max-width: 768px) {
     .service-box {
         flex: 1 1 100%; /* Full width on mobile */
-        max-width: 500px; /* Increased max-width for mobile */
+        max-width: 500px; /* adjusted max-width for mobile */
     }
 }
 .portfolio {
@@ -411,7 +411,7 @@ span {
     background: #fff;
     font-size: 1rem;
     color: #333;
-    margin-bottom: 1.5rem; /* Added space between inputs */
+    margin-bottom: 1.5rem; /* adjusted space between inputs */
 }
 
 .contact form .input-box input {
@@ -420,7 +420,7 @@ span {
 .contact form textarea {
     min-height: 200px;
     resize: vertical;
-    margin: 2rem 0; /* Added space above and below textarea */
+    margin: 2rem 0; /* adjusted space above and below textarea */
     width: 100%;
 }
 .contact form .btn {
@@ -430,7 +430,7 @@ span {
 .form-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 3rem; /* Increased gap between columns */
+    gap: 3rem; /* adjusted gap between columns */
     margin-bottom: 2rem;
     width: 100%;
 }
