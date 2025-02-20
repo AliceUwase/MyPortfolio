@@ -35,3 +35,4 @@ document.addEventListener('DOMContentLoaded', () => {
         navbar.classList.remove('active');
     };
 });
+
